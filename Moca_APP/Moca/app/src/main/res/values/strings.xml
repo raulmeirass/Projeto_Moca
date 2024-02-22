@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Moca</string>
+    <string name="nome_empresa_minusculo">moca</string>
+
+
+    <!--    Onboarding -->
+    <string name="btn_onboard_proximo">Próximo</string>
+    <string name="pular">Pular</string>
+    <!-- Titulos -->
+    <string name="titulo_onboarding_organizacao">Organização</string>
+    <string name="titulo_onboarding_limite_cartao">Limite do cartão</string>
+    <string name="titulo_onboarding_notificacoes">Notificações</string>
+    <string name="titulo_onboarding_matenha_controle">Mantenha o controle</string>
+    <!-- Textos -->
+    <string name="text_onboarding_organizacao">Organize de forma simples todas as suas transações financeiras, suas despesas, suas receitas, etc.</string>
+    <string name="text_onboarding_limite_cartao">Cadastre seus cartões, para ficar de olho no limite e começar a controlar gastos com precisão.</string>
+    <string name="text_onboarding_notificacoes">Receba notificações e SMS para manter-se informado sobre seu limite e ajuda-lo na sua organização financeira. </string>
+    <string name="text_onboarding_matenha_controle">Você ja deu o primeiro passo para sua transformação financeira, e nós vamos ajudar.</string>
+    <string name="btn_comecar">Vamos começar!</string>
+
+
+    <!--    Menu -->
+    <string name="home">Home</string>
+    <string name="extrato">Extrato</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="configuracoes">Configurações</string>
+
+
+    <!--    Tela de Login -->
+    <string name="entrar">Entrar</string>
+    <string name="esqueci_senha">Esqueceu sua senha?</string>
+    <string name="nao_possui_conta">Não é cadastrado?</string>
+    <string name="nome">Nome completo</string>
+    <string name="email">Email</string>
+    <string name="telefone">Telefone</string>
+    <string name="senha">Senha</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+
+
+    <!--    Tela de Cadastro -->
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="ja_possui_conta">Já possui conta?</string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <!--   Reset Password -->
+    <string name="texto_reset">Recuperação de Senha</string>
+    <string name="nova_senha">Nova senha</string>
+    <string name="nova_senha_confirme">Confirme nova senha</string>
+    <string name="reset">Confirmar</string>
+
+
+    <!--   Dashboard -->
+    <string name="mes">Mês</string>
+    <string-array name="meses">
+        <item>Janeiro</item>
+        <item>Fevereiro</item>
+        <item>Março</item>
+        <item>Abril</item>
+        <item>Maio</item>
+        <item>Junho</item>
+        <item>Julho</item>
+        <item>Agosto</item>
+        <item>Setembro</item>
+        <item>Outubro</item>
+        <item>Novembro</item>
+        <item>Dezenbro</item>
+    </string-array>
+    <string name="saldo">Saldo</string>
+    <string name="receita">Receita</string>
+    <string name="receitas">Receitas</string>
+    <string name="despesa">Despesa</string>
+    <string name="despesas">Despesas</string>
+    <string name="balanco">Balanço</string>
+    <string name="cartoes">Cartões</string>
+    <string name="porquinho">Porquinho</string>
+    <string name="receita_categoria">Receitas por categoria</string>
+    <string name="despesa_categoria">Despesas por categoria</string>
+
+
+    <!--    Extrato -->
+
+
+    <!--    Configurações -->
+    <string name="lembrete_notificacao">Notificações</string>
+    <string name="lembrete_sms">Notificações SMS</string>
+    <string name="numero_celular">Número de celular</string>
+    <string name="sair">Sair</string>
+    <string name="privacidade">Privacidade</string>
+    <string name="tema_escuro">Modo escuro</string>
+
+
+    <!--    Calculadora -->
+    <string name="calculadora_investimento">Calculadora de investimento</string>
+    <string name="valor_inicial">Valor inicial</string>
+    <string name="aporte_mensal">Aporte mensal</string>
+    <string name="taxa_juros">Taxa de juros</string>
+    <string name="periodo">Período</string>
+    <string name="limpar_calculadora">Limpar</string>
+    <string name="calcular">Calcular</string>
+    <string name="valor_estimado">Valor total estimado</string>
+
+
+    <!--    Receita -->
+    <string name="nova_receita">Nova Receita</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="valor">Valor</string>
+    <string name="categoria">Categoria</string>
+    <string name="descricao">Descrição</string>
+    <string name="data">Data</string>
+    <string name="tipoDespesa">Tipo de despesa</string>
+    <string name="listaCartoes">Cartão</string>
+    <string name="parcelas">Parcelas</string>
+    <string name="adicionar_receita">Adicionar Receita</string>
+
+    <!--    Cartões -->
+    <string name="novo_cartao">Novo Cartão</string>
+    <string name="meus_cartoes">Meus Cartões</string>
+    <string name="limite">Limite</string>
+    <string name="apelido">Apelido</string>
+    <string name="tipo_cartao">Tipo</string>
+    <string name="vencimento">Vencimento</string>
+    <string name="bandeira">Bandeira</string>
+    <string name="cor_cartao">Cor</string>
+    <string name="adicionar_cartao">Adicionar Cartão</string>
+    <string name="cadastrar_cartao">Cadastrar Cartão</string>
+
+    <!--    Porquinho -->
+    <string name="novo_porquinho">Novo Porquinho</string>
+    <string name="meus_porquinhos">Meus Porquinhos</string>
+    <string name="nome_meta">Nome meta</string>
+    <string name="valor_final_meta">Valor final da meta</string>
+    <string name="icone_porquinho">Ícone</string>
+    <string name="adicionar_porquinho">Adicionar Porquinho</string>
+    <string name="valor_guardado">Valor Guardado</string>
+    <string name="adicionar_valor">Adicionar Valor</string>
+    <string name="meta">Meta</string>
+    <string name="retirar_valor">Retirar Valor</string>
+
+</resources>

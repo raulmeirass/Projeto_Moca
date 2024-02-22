@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_moca"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo_moca"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Moca"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.ExtratoPorquinhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastrarFundoPorquinhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastrarPorquinhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastrarCartoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastrarDespesa"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CadastrarReceitas"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PorquinhoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CartoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DespesaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReceitaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ConfiguracoesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CalculadoraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ExtratoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:exported="false"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".activity.ResetPasswordActivity"
+            android:exported="false"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".activity.CadastroActivity"
+            android:exported="false"
+            android:theme="@style/MenuTheme" />
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

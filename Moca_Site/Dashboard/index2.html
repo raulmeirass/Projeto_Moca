@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="view"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>MOCA - DASHBOARD</title>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
+
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2>
+          <img src="img/logo-moca.png" width="30px" height="30px" alt="" />
+        </h2>
+        <span>moca</span>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="index2.html" class="active"
+              ><span class="material-symbols-outlined">pie_chart</span
+              ><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">description</span
+              ><span>Extrato</span></a
+            >
+          </li>
+          <li>
+            <a href="receita.html"
+              ><span class="material-symbols-outlined">arrow_upward</span
+              ><span>Receita</span></a
+            >
+          </li>
+          <li>
+            <a href="despesa.html"
+              ><span class="material-symbols-outlined">arrow_downward</span
+              ><span>Despesa</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">credit_card</span
+              ><span>Cartões</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">savings</span
+              ><span>Porquinho</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">calculate</span
+              ><span>Calculadora</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">settings</span
+              ><span>Configurações</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">keyboard_backspace</span
+              ><span>Sair</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h2>
+          <label style="cursor: pointer" for="nav-toggle">
+            <span class="material-symbols-outlined">menu</span>
+          </label>
+        </h2>
+
+        <div class="search-wrapper">
+          <span class="material-symbols-outlined">playlist_add_check</span>
+          <input type="" />
+        </div>
+
+        <div class="user-wrapper">
+          <div>
+            <h4>Diogo Moreno</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="cards">
+          <div class="card-single">
+            <div>
+              <span>Saldo</span>
+              <h2>R$548,56</h2>
+            </div>
+            <div>
+              <span id="money" class="material-symbols-outlined"
+                >attach_money</span
+              >
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <span>Receita</span>
+              <h2>R$1200,00</h2>
+            </div>
+            <span id="up" class="material-symbols-outlined">arrow_upward</span>
+          </div>
+          <div class="card-single">
+            <div>
+              <span>Despesa</span>
+              <h2>R$651,44</h2>
+            </div>
+            <div>
+              <span id="down" class="material-symbols-outlined"
+                >arrow_downward</span
+              >
+            </div>
+          </div>
+          <div class="card-single">
+            <div>
+              <span>Cartões</span>
+              <h2>R$352,25</h2>
+            </div>
+            <div>
+              <span id="cartao" class="material-symbols-outlined"
+                >credit_card</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-dash">
+          <div class="card-pos"></div>
+          <div class="card-pos"><h2>Receitas por categorias</h2></div>
+          <div class="card-pos"><h2>Cartões</h2></div>
+          <div class="card-pos"><h2>Despesa por categoria</h2></div>
+          <div class="card-pos"><h2>Porquinho</h2></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

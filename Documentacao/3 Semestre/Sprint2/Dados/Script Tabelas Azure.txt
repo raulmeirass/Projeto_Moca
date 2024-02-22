@@ -1,0 +1,91 @@
+create table tp_perfil(
+id_tp_perfil bigint primary key IDENTITY(1,1),
+nome_perfil varchar (100)
+);
+
+create table cliente (
+id bigint primary key IDENTITY(1,1),
+nome varchar (100), 
+email varchar (100),
+senha varchar (100),
+id_perfil bigint,
+foreign key (id_perfil) references tp_perfil(id_tp_perfil)
+);
+
+create table tp_cartao (
+id_tp_cartao bigint primary key IDENTITY(1,1),
+descricao varchar (100),
+);
+
+create table cartao (
+id_cartao bigint primary key IDENTITY(1,1),
+saldo decimal,
+limite decimal,
+id_cliente bigint,
+foreign key (id_cliente) references cliente(id),
+id_tipo bigint,
+foreign key (id_tipo) references tp_cartao(id_tp_cartao)
+);
+
+create table tp_despesa (
+id_tp_despesa bigint primary key IDENTITY(1,1),
+descricao varchar (100),
+);
+
+create table despesa (
+id_despesa bigint primary key IDENTITY(1,1),
+descricao varchar (100),
+valor decimal(10,2),
+data date,
+is_paid bit,
+is_parcela bit,
+id_cliente bigint,
+foreign key (id_cliente) references cliente(id),
+id_tipo_despesa bigint,
+foreign key (id_tipo_despesa) references tp_despesa(id_tp_despesa),
+is_cartao bit
+);
+
+create table tp_receita (
+id_tp_receita bigint primary key IDENTITY(1,1),
+descricao varchar (100),
+);
+
+create table receita (
+id_receita bigint primary key IDENTITY(1,1),
+descricao varchar (100),
+valor decimal(10,2),
+data date,
+id_cliente bigint,
+foreign key (id_cliente) references cliente(id),
+id_tipo_receita bigint,
+foreign key (id_tipo_receita) references tp_receita(id_tp_receita)
+);
+
+create table objetivo (
+id_objetivo bigint primary key IDENTITY(1,1),
+nome varchar (100),
+);
+
+create table porquinho (
+id_porquinho bigint primary key IDENTITY(1,1),
+nome varchar(100),
+valor_final decimal,
+valor_atual decimal,
+is_concluido bit,
+id_cliente bigint,
+foreign key (id_cliente) references cliente(id),
+id_obj bigint,
+foreign key (id_obj) references objetivo(id_objetivo)
+);
+
+
+create table arquivo (
+id_arquivo bigint primary key IDENTITY(1,1),
+arquivo_txt varbinary(max),
+id_cliente bigint,
+foreign key (id_cliente) references [dbo].[cliente](id)
+);
+
+
+

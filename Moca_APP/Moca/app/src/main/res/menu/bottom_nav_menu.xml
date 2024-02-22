@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/extrato"
+        android:icon="@drawable/ic_extract"
+        android:title="Extrato" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:checkable="false"
+        android:title=""/>
+
+    <item
+        android:id="@+id/calculadora"
+        android:icon="@drawable/ic_calculate"
+        android:title="Calculadora" />
+
+    <item
+        android:id="@+id/configuracoes"
+        android:icon="@drawable/ic_settings"
+        android:title="Configurações" />
+
+</menu>

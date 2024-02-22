@@ -1,0 +1,20 @@
+TEMA: Sistema de Gestão Financeira Pessoal
+
+PROBLEMA: Quantidade de vezes o cliente gastou com cada categoria (Moradia, Dividas, Lazer, Saúde, Alimentação)/Qual categoria de despesa mais foi usada, relação com as tabelas de cliente, despesa e tipo de despesa1
+
+
+Modelo Inicial - Grupo 3
+1 - Entender o dominio 
+Gestão Financeira Pessoal
+2 - Amostra de dados
+
+3 - Definir perguntas
+Quantas vezes o cliente gastou com cada categoria (Moradia, Dividas, Lazer, Saúde, Alimentação)?
+Quantas vezes o cliente recebeu com cada categoria (Salario, Rendimento, Vendas de Bens, Aluguel, )? 
+
+4 - Identificar nós
+5 - Identificar conexões entre tabelas
+6 - Testar as perguntas contra o modelo
+7 - Testar escabilidade
+
+felipe.nunes@neo4j.com

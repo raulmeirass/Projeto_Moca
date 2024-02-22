@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-es-12">
+        <nav class="">
+            <a class="text-none" href="index.html"> 
+                <div class="" id="logo">
+                    <img  src="../img/logoMoca.png" alt="MOCA">
+                    <h1><b>moca</b></h1>
+                </div>
+            </a>
+            <ul class="navbar">
+                <li><a href="../html/index.html">Início</a></li>
+                <li><a href="../html/index.html">Dicas</a></li>
+                <li><a href="../html/index.html">Funcionalidades</a></li>
+                <li><a href="../html/index.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="" id="btns">
+            <button class="entrar" onclick="window.location.href='../html/login.html'">LOGIN</button>
+            <button class="cadastrar" onclick="window.location.href='../html/cadastro.html'">CADASTRAR</button>
+            <!-- Simbolo do Menu Hamburguer -->
+            <div class="mobile-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#dica">Dicas</a></li>
+            <li><a href="#funcionalidade-sistema">Funcionalidades</a></li>
+            <li><a href="#footer">Contato</a></li>
+            <li><button onclick="window.location.href='../html/login.html'">LOGIN</button></li>
+            <li><button onclick="window.location.href='../html/cadastro.html'">CADASTRAR</button></li>
+        </div>
+    </header>
+
+    <div class="texto-cadastro">
+        <p >Pronto para se organizar?</p>
+        <h2>Quando você se organiza, consegue mais tempo para fazer as coisas que realmente importam.</h2>
+    </div>
+
+    <section class="container-cadastro">
+        <img class="bolaAzulCadastro" src="../img/Vector (7).png" alt="">
+        <div class="card-cadastro">
+            <h1>Cadastre-se</h1>
+            <form class="cont-cadastro">
+                <div class="input-cadastro">
+                    <input type="email-cadastro" name="email" id="email-cadastro" placeholder="Nome completo">
+                </div>
+                <div class="input-cadastro">
+                    <input type="email-cadastro" name="email" id="email-cadastro" placeholder="Email">
+                </div>
+                <div class="input-cadastro">
+                    <input type="email-cadastro" name="email" id="email-cadastro" placeholder="Senha">
+                </div>
+                <div class="input-cadastro">
+                    <input type="password" name="senha-cadastro" id="senha-cadastro" placeholder="Confirmar senha">
+                </div>
+                <div class="input-cadastro">
+                    <button type="submit" class="btn-cadastro">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        <img class="bolaPretaCadastro" src="../img/Vector (6).png" alt="">
+
+    </section>
+
+    
+</body>
+</html>

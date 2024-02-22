@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="view"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="style2.css">
+    <title>MOCA - RECEITA</title>
+  </head>
+  <body>
+    <input type="month" id="nav-toggle" />
+
+    <div class="sidebar">
+      <div class="sidebar-brand">
+        <h2>
+          <img src="img/logo-moca.png" width="30px" height="30px" alt="" />
+        </h2>
+        <span>moca</span>
+      </div>
+
+      <div class="sidebar-menu">
+        <ul>
+          <li>
+            <a href="index2.html" 
+              ><span class="material-symbols-outlined">pie_chart</span
+              ><span>Dashboard</span></a
+            >
+          </li>
+          <li>
+            <a href="" 
+              ><span class="material-symbols-outlined">description</span
+              ><span>Extrato</span></a
+            >
+          </li>
+          <li>
+            <a href="receita.html" class="active"
+              ><span class="material-symbols-outlined">arrow_upward</span
+              ><span>Receita</span></a
+            >
+          </li>
+          <li>
+            <a href="despesa.html"
+              ><span class="material-symbols-outlined">arrow_downward</span
+              ><span>Despesa</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">credit_card</span
+              ><span>Cartões</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">savings</span
+              ><span>Porquinho</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">calculate</span
+              ><span>Calculadora</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">settings</span
+              ><span>Configurações</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="material-symbols-outlined">keyboard_backspace</span
+              ><span>Sair</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h2>
+          <label style="cursor: pointer" for="nav-toggle">
+            <span class="material-symbols-outlined">menu</span>
+          </label>
+        </h2>
+
+        <div class="user-wrapper">
+          <div>
+            <h4>Diogo Moreno</h4>
+            <small>Super Admin</small>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="cards-receitas">
+          <div class="card-single-receita">
+            <div>
+              <span>Receita</span>
+              <h2>R$1200,00</h2>
+            </div>
+            <span id="up" class="material-symbols-outlined">arrow_upward</span>
+          </div>
+          <div class="card-receita">
+            <div>
+              <span>Nova Receita</span> <br>
+              <h2 class="material-symbols-outlined">add</h2>
+            </div>
+            <!-- <span id="up" class="material-symbols-outlined">add</span> -->
+          </div>
+
+        </div>
+
+        <div class="table-container">
+          <h2 class="heading"> <span style="cursor: pointer;" class="material-symbols-outlined">chevron_left</span> Janeiro <span style="cursor: pointer;" class="material-symbols-outlined">chevron_right</span></h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Situação</th>
+                <th>Data</th>
+                <th>Descrição</th>
+                <th>Categoria</th>
+                <th>Valor</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Situação">
+                  <span id="positivo" class="material-symbols-outlined">close</span>
+                  <span id="negativo" class="material-symbols-outlined">done</span>
+                </td>
+                <td data-label="Data">20/12/2023</td>
+                <td data-label="Descrição">Compra feita em tabacaria</td>
+                <td data-label="Categoria">Crédito</td>
+                <td data-label="Valor">R$200</td>
+                <td data-label="Ações">
+                  <button><span class="material-symbols-outlined">edit</span></button>                   
+                  <button><span class="material-symbols-outlined">delete</span></button>                  
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

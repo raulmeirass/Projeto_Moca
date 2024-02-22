@@ -1,0 +1,221 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(77, 77, 77, .7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(77, 77, 77, .7);
+  transition: all .5s; */
+}
+
+.modal:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__content {
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  background: #fff;
+  padding: 1em 2em;
+}
+
+.modal__content span {
+  cursor: pointer;
+}
+
+.modal__content h1 {
+  margin: 0.6em 0;
+}
+
+.modal__content p {
+  margin: 1em 0 0 0;
+  color: #9C9C9C;
+}
+
+.botoes-popup {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1em 0;
+}
+
+.confirme-popup,
+.nega-popup {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 0.050em;
+}
+
+.confirme-popup {
+  background-color: #4BA64F;
+}
+
+.nega-popup {
+  background-color: #EC5959;
+}
+
+
+
+.input,
+.selecao {
+  position: relative;
+  border: none;
+  box-shadow: 0px 1.5px 0px 0px #0b0b65;
+  padding: .2rem;
+  font-size: 1em;
+  transition: all 200ms ease-in-out;
+  opacity: .8;
+  margin-top: 0.5em;
+}
+
+.selecao {
+  overflow: auto;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0;
+}
+
+.input-box small {
+  color: red;
+  margin: 5px 0;
+}
+
+.input-label {
+  font-size: 1em;
+  margin-left: 1px;
+  color: #858585;
+}
+
+.input::placeholder,
+.selecao::placeholder {
+  color: rgb(145, 145, 145);
+  font-size: .75rem;
+}
+
+.input::after {
+  content: attr(placeholder);
+  position: absolute;
+  color: #161616;
+  top: 0;
+  left: 0;
+}
+
+.input:focus,
+.selecao:focus {
+  border: none;
+  box-shadow: 0px 1.5px 0px 0px #0b0b65;
+  outline: none;
+}
+
+.input:focus+.input-helper {
+  visibility: visible;
+  transform: translateY(0rem);
+}
+
+.input:focus::placeholder {
+  visibility: hidden;
+}
+
+.mes-ano input {
+  margin: 0 20px 0 0;
+  width: 100px;
+}
+
+
+.modal__footer {
+  margin-top: 2rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__footer button {
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #fff;
+  background: #000;
+  cursor: pointer;
+}
+
+.modal_footer_depesa button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.modal_footer_depesa button {
+  background: #4BA64F;
+}
+
+.modal_footer_receita button {
+  background: #4BA64F;
+}
+
+.modal_footer_cartao button {
+  background: linear-gradient(180deg, #A921E9 0%, #9A59EC 100%);
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #585858;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 960px) {
+  .modal__content {
+    width: 90%;
+  }
+
+  .modal__content h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .input,
+  .selecao {
+    /* padding: 0; */
+    margin: 0;
+  }
+
+  .modal__footer {
+    margin: 0;
+  }
+
+  /* .input-box {
+     margin: 0;
+  } */
+}
